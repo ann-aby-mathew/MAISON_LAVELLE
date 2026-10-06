@@ -1,0 +1,137 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Maison Lavelle</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #0f0f0f;
+        color: #ffffff;
+    }
+
+    .start {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .start-text {
+        flex: 1;
+        padding: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    }
+
+    .start-text h1 {
+        font-size: 58px;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+    }
+    .start-text h3 {
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #e6b8a2;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+    
+    .start-text span {
+        color: #e6b8a2;
+    }
+
+    .start-text p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #dcdcdc;
+        max-width: 500px;
+    }
+
+    .buttons {
+        margin-top: 40px;
+    }
+
+    .buttons a {
+        text-decoration: none;
+        padding: 14px 35px;
+        margin-right: 15px;
+        border-radius: 30px;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        display: inline-block;
+    }
+
+    .login {
+        background-color: #e6b8a2;
+        color: #000;
+    }
+
+    .login:hover {
+        background-color: #fff;
+        transform: scale(1.05);
+    }
+
+    .register {
+        border: 2px solid #e6b8a2;
+        color: #e6b8a2;
+        background: transparent;
+    }
+
+    .register:hover {
+        background-color: #e6b8a2;
+        color: #000;
+        transform: scale(1.05);
+    }
+
+    .start-image {
+        flex: 1;
+        background-image: url("https://images.pexels.com/photos/30979050/pexels-photo-30979050.jpeg?cs=srgb&dl=pexels-israyosoy-30979050.jpg&fm=jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.35);
+    }
+</style>
+</head>
+
+<body>
+
+<div class="start">
+    <div class="start-text">
+        <h3>Welcome to</h3>
+        <h1>MAISON <span>LAVELLE</span></h1>
+        <p>
+            Discover timeless fashion crafted for elegance and confidence.
+            Maison Lavelle brings luxury and modern aesthetics together.
+        </p>
+
+        <div class="buttons">
+            <a href="register.jsp" class="register">Get Started</a>
+            <a href="login.jsp" class="login">Login</a>
+        </div>
+    </div>
+
+    <div class="start-image">
+        <div class="overlay"></div>
+    </div>
+</div>
+
+</body>
+</html>
